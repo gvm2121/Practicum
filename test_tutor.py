@@ -131,9 +131,19 @@ def ver_faltantes(list_1,list_2):
     return result
 
 #Task 2.
-#
+
 #There is an array of integers. You need to remove the zeros from it. Only O(1) of additional memory can be used. Example**:**
-#
+array = [0,1,0,0,4,5,6,7,0,8,-4,0]
+output = [1,4,5,6,7,8,-4]
+
+def remove_zeros(arr):
+    set_array = set(arr)
+    salida =list(set_array)
+    salida.remove(0)
+    return salida
+
+assert remove_zeros(array)==output
+
 #![Снимок экрана 2022-10-22 в 18.47.09.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/716cdd57-2cf8-4519-914c-900fe4fcb145/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA_%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0_2022-10-22_%D0%B2_18.47.09.png)
 
 #You can leave your answer as a link to your repository in GitHub.
